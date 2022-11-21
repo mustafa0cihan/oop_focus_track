@@ -1,11 +1,14 @@
 package exercise;
-
+import java.util.Scanner;
 public class square {
-    static int myMethod(int x) {
-       return x * x;
-    }
-
     public static void main(String[] args) {
-        System.out.println(myMethod(6));
-    }
+            Scanner scan = new Scanner(System.in);
+
+            System.out.print("Please enter a number: ");
+            int pNumber = scan.nextInt();
+
+            int result = pNumber*pNumber;
+            System.out.println("Square of your number : " + result);
+        }
 }
+
